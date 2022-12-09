@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       password: password,
     }
 
-    await fetch("http://localhost:3000/login", {
+    await fetch("http://json-server-auth-mimi-theatre.vercel.app/login", {
       method: "POST",
       body: JSON.stringify(doc),
       headers: { "Content-Type": "application/json" },
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         password: password,
       }
 
-      await fetch("http://localhost:3000/register", {
+      await fetch("http://json-server-auth-mimi-theatre.vercel.app/register", {
         method: "POST",
         body: JSON.stringify(doc),
         headers: { "Content-Type": "application/json" },
